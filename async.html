@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+<script>
+//async method
+async function abcd(){
+    return "aptect";
+}
+console.log(abcd());
+
+let abc= async function (){
+    return "aptect";
+}
+
+console.log(abc());
+
+let ab=async () => "aptect";
+
+console.log(abc());
+
+async function test() {
+    return "aptect";
+}
+
+test().then((result) =>{
+    console.log(result);
+});
+
+
+
+</script>
+</body>
+</html>
