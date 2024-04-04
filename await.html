@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>await</title>
+</head>
+<body>
+    <script>
+    // async function a() {
+  // console.log("1 aptect");
+    //     console.log("2 aptect");
+    //     console.log("3 aptect");
+    //     console.log("4 aptect");
+    
+     // console.log("5 aptect");
+    // a();
+    // console.log("6 aptect");
+
+//     async function a() {
+//         console.log("1 aptect");
+//       await  console.log("2 aptect");
+//         console.log("3 aptect");
+//         console.log("4 aptect");
+//     }
+//     console.log("5 aptect");
+//     a();
+//     console.log("6 aptect");
+
+// async function abcd() {
+//   const response =await fetch();
+//   const result =await response.json();
+ 
+//   return result;
+// }
+
+// let a = abcd();
+// console.log(a);
+
+
+// async function abcd() {
+ 
+//   return (await fetch ("./first.json")).json();
+// }
+
+// let a = abcd();
+// console.log(a);
+
+
+
+async function abcd() {
+ 
+ return (await fetch ("./first.json")).json();
+}
+
+abcd().then((res) =>{
+  console.log(res);
+}).catch((error) => {
+  console.log(error);
+})
+</script>
+</body>
+</html>
